@@ -1,0 +1,19 @@
+.instabuy-navbar{
+    border-bottom: 1px solid grey;
+    height: 4rem;
+    background: rgb(237, 237, 30);
+}
+.logo-top-left{
+    margin-left: 3rem;
+}
+.justify-content-end{
+    margin-right: 3rem;
+}
+.home-container{
+    padding: 41px 0px;
+}
+.Carousel-img{
+    height: 80vh;
+    width: 80vh;
+    margin-left: 9rem;
+}

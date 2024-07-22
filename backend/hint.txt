@@ -1,0 +1,36 @@
+Project Shop
+
+server run : npm run server
+client run : npm run dev
+
+full project run : npm run dev
+
+
+
+
+POST : http://localhost:5000/postproducts
+
+GET ALL :
+http://localhost:5000/getproducts
+
+GET SINGLE P :
+http://localhost:5000/getproducts/{id}
+
+PUT : 
+http://localhost:5000/editproducts/{id}
+
+DELETE :
+http://localhost:5000/deleteproducts/{id}
+
+
+
+Sample Data :
+
+{
+    "name": "Sample Product",
+    "price": 99.99,
+    "description": "This is a sample product description.",
+    "discount": 10,
+    "type": "Electronics",
+    "imgUrl": "https://example.com/sample-product.jpg"
+}

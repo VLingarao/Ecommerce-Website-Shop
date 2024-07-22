@@ -25,7 +25,7 @@ const EditProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/getproducts/${id}`);
+        const response = await axios.get(`https://ecommerce-website-backend-kej4.onrender.com/getproducts/${id}`);
         setProduct(response.data);
         setLoading(false);
       } catch (err) {
@@ -43,7 +43,7 @@ const EditProduct = () => {
 
   const handleSave = async () => {
     try {
-      await axios.put(`http://localhost:5000/editproducts/${id}`, product);
+      await axios.put(`https://ecommerce-website-backend-kej4.onrender.com/editproducts/${id}`, product);
       navigate('/productlist');
     } catch (err) {
       console.error('Error updating product:', err);

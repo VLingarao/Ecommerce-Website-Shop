@@ -22,7 +22,7 @@ const ProductList = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/getproducts');
+      const response = await axios.get('https://ecommerce-website-backend-kej4.onrender.com/getproducts');
       setProducts(response.data);
       setLoading(false);
     } catch (err) {
@@ -33,7 +33,7 @@ const ProductList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/deleteproducts/${id}`);
+      await axios.delete(`https://ecommerce-website-backend-kej4.onrender.com/deleteproducts/${id}`);
       setProducts(products.filter(product => product._id !== id));
     } catch (err) {
       console.error('Error deleting product:', err);

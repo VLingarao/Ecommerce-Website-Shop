@@ -38,7 +38,7 @@ export default function Products() {
   useEffect(() => {
     async function getProducts() {
       try {
-        const response = await axios.get('http://localhost:5000/getproducts');
+        const response = await axios.get('https://ecommerce-website-backend-kej4.onrender.com/getproducts');
         setProducts(response.data);
         setFilteredProducts(response.data); 
       } catch (error) {

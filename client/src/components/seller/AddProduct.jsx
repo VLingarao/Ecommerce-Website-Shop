@@ -31,7 +31,7 @@ const AddProduct = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/postproducts', product);
+      const response = await axios.post('https://ecommerce-website-backend-kej4.onrender.com/postproducts', product);
       navigate('/productlist');
     //   console.log('Product added:', response.data);
     } catch (error) {
